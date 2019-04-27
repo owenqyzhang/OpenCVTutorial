@@ -1,0 +1,6 @@
+cmake_minimum_required( VERSION 2.8 )
+project( basic_linear_transforms )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( basic_linear_transforms basic_linear_transforms.cc )
+target_link_libraries( basic_linear_transforms ${OpenCV_LIBS} )
